@@ -4,9 +4,9 @@ name: Autograding Tests
 - workflow_dispatch
 - repository_dispatch
 permissions:
-  checks: write
-  actions: write
-  contents: write
+  checks: read|write|none
+  actions: read|write|none
+  contents: read|write|none
 jobs:
   run-autograding-tests:
     runs-on: ubuntu-latest
